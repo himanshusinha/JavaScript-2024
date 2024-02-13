@@ -132,26 +132,131 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 //Review function
 
 //Function Declaration
-function calcAge (birthYear){
-  return 2037-birthYear;
-}
+// function calcAge (birthYear){
+//   return 2037-birthYear;
+// }
 //Function Expression 
-const yearsUntilRetirement = function(birthYear,firstName){
-  const age = calcAge(birthYear);
-  const retirement = 65 - age;
+// const yearsUntilRetirement = function(birthYear,firstName){
+//   const age = calcAge(birthYear);
+//   const retirement = 65 - age;
 
-  if(retirement>0)
-  {
-    console.log(`${firstName} retires in ${retirement}`)
-    return retirement;
+//   if(retirement>0)
+//   {
+//     console.log(`${firstName} retires in ${retirement}`)
+//     return retirement;
+//   }
+//   else{
+//     console.log(`${firstName} has already retired`
+//     )
+//     return-1;
+//   }
+//   // return `${firstName} retires in ${retirement}`
+// }
+
+// console.log(yearsUntilRetirement(1990,'Jonas'));
+// console.log(yearsUntilRetirement(1950,'Mike'));
+
+
+//Array
+
+// const friends1 = "Michael";
+// const friends2 = "Steven";
+// const friends3 = "Peter";
+
+// const friends = ["Michael","Steven","Peter"];
+// console.log(friends);
+
+// console.log(years)
+// console.log(friends[0]);
+// console.log(friends[2]);
+// console.log(friends.length)
+// console.log(friends[friends.length-1])
+
+// friends[2]="Mike";
+// console.log(friends)
+
+// const jonas=["Jonas","Schmedtmann",2037-1991,friends];
+// console.log(jonas)
+
+// Excercise 
+// const calcAge1 = function(birthYear){
+//   return 2037-birthYear;
+// }
+// const years =[1990,1991,1992,1993];
+// const age1 = calcAge1(years[0]);
+// const age2 = calcAge1(years[1]);
+// const age = [ calcAge1(years[0]),calcAge1(years[1]),calcAge1(years[years.length-1])];
+// console.log(age)
+
+//Arrays methods
+
+// const friends = ["Michael","Steven","Peter"]
+// // add elements from last position of array
+// friends.push("Mike");
+// console.log(friends);
+// // remove elements from last position of array
+// friends.pop("Mike");
+// console.log(friends)
+// //add elements from first position of array
+// friends.unshift("John");
+// console.log(friends)
+// //remove elements from last position of array
+// friends.shift();
+// console.log(friends)
+// // index of to get index of element from array
+// console.log(friends.indexOf("Peter"))
+// //includes 
+
+// console.log(friends.includes("Michael"))
+// JsonObject
+// const jsonArray=["Jonas","Schmedtmann",2024-1990];
+
+// const jsonObject={
+//   firstName:'Himanshu',
+//   lastName:'Sinha',
+//   email:'himanshusinha011@gmail.com',
+//   age:2037-1990,
+//   friends:["Michael","Mike","John"]
+// };
+// console.log(jsonObject);
+// console.log(jsonObject['lastName']);
+// console.log(jsonObject['email']);
+// const nameKey= "Name";
+// console.log(jsonObject['first'+nameKey])
+// console.log(jsonObject['last'+nameKey])
+
+// const interestedIn =prompt("What do you want to know about Jonas?Choose between firstName,lastName,email,age and friends");
+// console.log(jsonObject[interestedIn])
+
+// if(jsonObject[interestedIn]){
+//   console.log(jsonObject[interestedIn])
+// }
+// else{
+//   console.log("Wrong request !! Choose between firstName,lastName,email,age and friends")
+// }
+
+// jsonObject.location='indore';
+// jsonObject['facebook']='@himanshusinha';
+// console.log(jsonObject)
+
+// //Challenge
+// //Jonas has 3 friends and his best friends is called michael
+
+// console.log(`${jsonObject.firstName} has ${jsonObject.friends} and his best friends is ${jsonObject.friends[0]}`)
+
+//Object Methods
+
+const jonas={
+  firstName:'Jonas',
+  lastName:"Schmedtmann",
+  birthYear:1991,
+  job:'teacher',
+  hasDrivingLicense:true,
+  calcAge:function(birthYear){
+    return 2037-birthYear;  
   }
-  else{
-    console.log(`${firstName} has already retired`
-    )
-    return-1;
-  }
-  // return `${firstName} retires in ${retirement}`
+
 }
 
-console.log(yearsUntilRetirement(1990,'Jonas'));
-console.log(yearsUntilRetirement(1950,'Mike'));
+console.log(jonas.calcAge(1991));
+console.log(jonas['calcAge']('1991'))
