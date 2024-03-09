@@ -9,7 +9,7 @@
 
 // const private = 534;
 
-//function 
+//function
 // function logger(){
 //   console.log("My name is Himanshu Sinha")
 // }
@@ -38,7 +38,6 @@
 // const result = mutliply(2,3);
 // console.log(result)
 
-
 // //Function declaration
 //  function calcAge1(birthYear){
 //   return 2037-birthYear;
@@ -50,12 +49,11 @@
 //  }
 //  const age2 = calcAge2(1991)
 //  console.log(age1,age2)
- 
+
 //Arrow Function
 // const calAge3 = birthYear=>2037-birthYear;
 // const age3=calAge3(1990);
 // console.log(age3)
-
 
 // const yearsUntilRetirement= (birthYear,firstName)=>{
 //   const age = 2037-birthYear;
@@ -112,7 +110,7 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 // }
 //  console.log(calculateResult(2,4,10))
 
- // Value of square and cube with the help of function
+// Value of square and cube with the help of function
 //  function square(number){
 //   return number*number;
 //  }
@@ -135,7 +133,7 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 // function calcAge (birthYear){
 //   return 2037-birthYear;
 // }
-//Function Expression 
+//Function Expression
 // const yearsUntilRetirement = function(birthYear,firstName){
 //   const age = calcAge(birthYear);
 //   const retirement = 65 - age;
@@ -155,7 +153,6 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 
 // console.log(yearsUntilRetirement(1990,'Jonas'));
 // console.log(yearsUntilRetirement(1950,'Mike'));
-
 
 //Array
 
@@ -178,7 +175,7 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 // const jonas=["Jonas","Schmedtmann",2037-1991,friends];
 // console.log(jonas)
 
-// Excercise 
+// Excercise
 // const calcAge1 = function(birthYear){
 //   return 2037-birthYear;
 // }
@@ -205,7 +202,7 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 // console.log(friends)
 // // index of to get index of element from array
 // console.log(friends.indexOf("Peter"))
-// //includes 
+// //includes
 
 // console.log(friends.includes("Michael"))
 // JsonObject
@@ -244,19 +241,34 @@ and in last value is console in juce  = Juice with 6 pieces of apples and 9 piec
 
 // console.log(`${jsonObject.firstName} has ${jsonObject.friends} and his best friends is ${jsonObject.friends[0]}`)
 
-//Object Methods
+// //Object Methods
+// const jonas = {
+//   firstName: "Jonas",
+//   lastName: "Schmedtmann",
+//   birthYear: 1991,
+//   job: "teacher",
+//   hasDrivingLicense: true,
+//   calcAge: function () {
+//     if (!this.age) {
+//       this.age = 2037 - this.birthYear;
+//     }
+//     return this.age;
+//   },
+// };
 
-const jonas={
-  firstName:'Jonas',
-  lastName:"Schmedtmann",
-  birthYear:1991,
-  job:'teacher',
-  hasDrivingLicense:true,
-  calcAge:function(birthYear){
-    return 2037-birthYear;  
-  }
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
+// console.log(jonas.calcAge());
 
+// const getSummary = function () {
+//   const data = `${this.firstName} is a ${this.age} year old teacher and he ${
+//     this.hasDrivingLicense ? "has" : "doesn't have"
+//   } a driving license`;
+//   return data;
+// };
+// console.log(getSummary.call(jonas));
+
+for (let i = 1; i <= 10; i++) {
+  console.log(`Lifting weights repetation ${i}🏋🏻‍♀️`);
 }
-
-console.log(jonas.calcAge(1991));
-console.log(jonas['calcAge']('1991'))
