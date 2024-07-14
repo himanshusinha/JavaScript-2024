@@ -1,3 +1,5 @@
+/* Write your code below. Good luck! 🙂 */
+
 const scoreDolphins = 96 + 108 + 89 / 3;
 const scoreKoalas = 88 + 91 + 10 / 3;
 
