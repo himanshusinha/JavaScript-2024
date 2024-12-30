@@ -95,3 +95,6 @@ console.log(yearsUntilRetirement(1970, 'Mike'));
 const friends1 = 'Michael';
 const friends2 = 'Steven';
 const friends3 = 'Peter';
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
