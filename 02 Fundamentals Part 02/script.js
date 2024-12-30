@@ -90,7 +90,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 };
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
-*/
+
 
 const friends1 = 'Michael';
 const friends2 = 'Steven';
@@ -98,3 +98,90 @@ const friends3 = 'Peter';
 
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
+
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years[0]);
+console.log(years[1]);
+console.log(years[2]);
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice'];
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+
+//Exercise
+const calcAge = function (birthYear) {
+  return 2037 - birthYear;
+};
+
+const years1 = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years1[0]);
+const age2 = calcAge(years1[1]);
+const age3 = calcAge(years1[years1.length - 1]);
+
+console.log(age1, age2);
+// Storing ages in an array
+const ages = [calcAge(years1[0]), calcAge(years1[1]), calcAge(years1[2])];
+console.log(ages);
+
+
+const friends = ['Michael', 'Steven', 'Peter'];
+
+// Add elements
+const newLength = friends.push('Jay');
+console.log(newLength);
+console.log(friends);
+friends.unshift('John');
+console.log(friends);
+
+// Remove elements
+friends.pop(); // Last
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+
+console.log(friends.shift()); // First
+console.log(friends);
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+friends.push(23);
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes('23'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+  console.log('You have a friend called Steven');
+}
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+];
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+*/
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+console.log(jonas.firstName);
