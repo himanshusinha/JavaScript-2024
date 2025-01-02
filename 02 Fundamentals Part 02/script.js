@@ -175,10 +175,6 @@ const jonas = {
   job: 'teacher',
   friends: ['Michael', 'Peter', 'Steven'],
 };
-<<<<<<< HEAD
-=======
-
->>>>>>> 3d8b2abc748bca58163c05183a2923370ee8f00a
 
 const jonas = {
   firstName: 'Jonas',
@@ -188,73 +184,6 @@ const jonas = {
   friends: ['Michael', 'Peter', 'Steven'],
 };
 console.log(jonas.firstName);
-<<<<<<< HEAD
-console.log(jonas['lastName']);
-
-const nameKey = 'Name';
-console.log(jonas['first' + nameKey]);
-console.log(jonas['last' + nameKey]);
-
-const intersetedIn = prompt(
-  'What do you want to know about Jonas? Choose between firstName, lastName, age, job, and friends'
-);
-
-console.log(jonas[intersetedIn]);
-
-if (jonas[intersetedIn]) {
-  console.log(jonas[intersetedIn]);
-} else {
-  console.log(
-    'Wrong request! Choose between firstName, lastName, age, job, and friends'
-  );
-}
-
-jonas.location = 'Portugal';
-jonas['twitter'] = '@jonasschmedtman';
-console.log(jonas);
-
-console.log(
-  `${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is ${jonas.friends[0]}`
-);
-
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  birthYear: 1991, // Add birthYear to the object
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicense: false,
-  calcAge: function () {
-    // console.log(this); // Log the `this` keyword to see the entire object
-    return 2037 - this.birthYear; // Use `this.birthYear` to calculate age
-  },
-  getSummary: function () {
-    return `${this.firstName} is a ${this.calcAge()}-year old ${
-      this.job
-    }, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license.`;
-  },
-};
-
-console.log(jonas.calcAge()); // Calls the method and calculates age
-console.log(jonas.calcAge());
-console.log(jonas.calcAge());
-
-console.log(jonas.getSummary());
-
-
-for (let rep = 1; rep <= 10; rep++) {
-  console.log(`Lifting weights repetition ${rep}`);
-}
-*/
-
-for (let i = 0; i < jonas.length; i++) {
-  console.log(jonas[i]);
-
-  // types[i] = typeof jonas[i];
-  types.push(typeof jonas[i]);
-}
-console.log(types);
-=======
 */
 const jonas = [
   'Jonas',
@@ -295,4 +224,3 @@ const jonasArray = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher'];
 for (let i = jonasArray.length - 1; i >= 0; i--) {
   console.log(jonasArray[i]);
 }
->>>>>>> 3d8b2abc748bca58163c05183a2923370ee8f00a
