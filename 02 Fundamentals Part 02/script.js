@@ -184,7 +184,7 @@ const jonas = {
   friends: ['Michael', 'Peter', 'Steven'],
 };
 console.log(jonas.firstName);
-*/
+
 const jonas = [
   'Jonas',
   'Schmedtmann',
@@ -223,4 +223,27 @@ const jonasArray = ['Jonas', 'Schmedtmann', 2037 - 1991, 'teacher'];
 
 for (let i = jonasArray.length - 1; i >= 0; i--) {
   console.log(jonasArray[i]);
+}
+
+for (let excercise = 1; excercise < 4; excercise++) {
+  console.log(`Starting excercise ${excercise}`);
+}
+
+for (let rep = 1; rep < 5; rep++) {
+  console.log(`Lifting weights repetition ${rep}`);
+}
+*/
+let rep = 1;
+while (rep <= 10) {
+  console.log(`While Lifting weights repetition ${rep}`);
+  rep++;
+}
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
+
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...');
 }
