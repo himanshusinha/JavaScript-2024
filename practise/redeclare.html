@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redeclaring</title>
+  </head>
+  <h2>Redeclaring Variables</h2>
+  <p id="demo"></p>
+
+  <body>
+    <script>
+      let x = 10;
+
+      {
+        let x = 2;
+      }
+      document.getElementById('demo').innerHTML = x;
+      carName = 'Volvo';
+      console.log(carName);
+    </script>
+  </body>
+</html>
